@@ -5,6 +5,48 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.trevynmace.destinyresettracker.MainActivity">
+    tools:context="com.trevynmace.destinyresettracker.MainActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <CheckBox
+        android:id="@+id/clanXpCheckbox"
+        android:layout_width="193dp"
+        android:layout_height="33dp"
+        android:text="Clan XP (Weekly)"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="44dp"/>
+
+    <CheckBox
+        android:id="@+id/treasureMapsCheckbox"
+        android:layout_width="231dp"
+        android:layout_height="36dp"
+        android:text="Cayde Treasure Maps (Weekly)"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="87dp"/>
+
+    <CheckBox
+        android:id="@+id/callToArmsCheckbox"
+        android:layout_width="193dp"
+        android:layout_height="33dp"
+        android:text="Call to Arms (Weekly)"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="132dp"/>
+
+    <CheckBox
+        android:id="@+id/nightfallCheckbox"
+        android:layout_width="193dp"
+        android:layout_height="33dp"
+        android:text="Nightfall Strike (Weekly)"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="174dp"/>
+
+    <CheckBox
+        android:id="@+id/flashpointCheckbox"
+        android:layout_width="193dp"
+        android:layout_height="33dp"
+        android:text="Flashpoint (Weekly)"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="216dp"/>
 
 </android.support.constraint.ConstraintLayout>

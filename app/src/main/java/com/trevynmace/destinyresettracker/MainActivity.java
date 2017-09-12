@@ -14,5 +14,7 @@ public class MainActivity extends AppCompatActivity
         //TODO: have a list of items on the screen with checkboxes next to them.
         // reset button underneath to reset them all to unchecked.
         // save the isChecked to the prefs.
+
+
     }
 }
