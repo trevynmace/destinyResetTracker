@@ -17,10 +17,19 @@ public class MainActivity extends AppCompatActivity
     CheckBox nightfallCheckbox;
     CheckBox treasureMapsCheckbox;
 
+    CheckBox raidStandardBearersCheckbox;
+    CheckBox raidRoyalPoolsCheckbox;
+    CheckBox raidPleasureGardensCheckbox;
+    CheckBox raidGauntletCheckbox;
+    CheckBox raidEmperorCalusCheckbox;
+
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setLogo(R.mipmap.ic_launcher);
+        getSupportActionBar().setDisplayUseLogoEnabled(true);
         setContentView(R.layout.activity_main);
 
         clanXpCheckbox = (CheckBox) findViewById(R.id.clanXpCheckbox);
@@ -28,6 +37,12 @@ public class MainActivity extends AppCompatActivity
         flashpointCheckbox = (CheckBox) findViewById(R.id.flashpointCheckbox);
         nightfallCheckbox = (CheckBox) findViewById(R.id.nightfallCheckbox);
         treasureMapsCheckbox = (CheckBox) findViewById(R.id.treasureMapsCheckbox);
+
+        raidStandardBearersCheckbox = (CheckBox) findViewById(R.id.raidStandardBearersCheckbox);
+        raidRoyalPoolsCheckbox = (CheckBox) findViewById(R.id.raidRoyalPoolsCheckbox);
+        raidPleasureGardensCheckbox = (CheckBox) findViewById(R.id.raidPleasureGardensCheckbox);
+        raidGauntletCheckbox = (CheckBox) findViewById(R.id.raidGauntletCheckbox);
+        raidEmperorCalusCheckbox = (CheckBox) findViewById(R.id.raidEmperorCalusCheckbox);
 
         setCheckboxes();
 
@@ -42,6 +57,12 @@ public class MainActivity extends AppCompatActivity
                 flashpointCheckbox.setChecked(false);
                 nightfallCheckbox.setChecked(false);
                 treasureMapsCheckbox.setChecked(false);
+
+                raidStandardBearersCheckbox.setChecked(false);
+                raidRoyalPoolsCheckbox.setChecked(false);
+                raidPleasureGardensCheckbox.setChecked(false);
+                raidGauntletCheckbox.setChecked(false);
+                raidEmperorCalusCheckbox.setChecked(false);
             }
         });
     }
@@ -61,6 +82,12 @@ public class MainActivity extends AppCompatActivity
         flashpointCheckbox.setChecked(prefs.getBoolean("flashpointCheckbox", false));
         nightfallCheckbox.setChecked(prefs.getBoolean("nightfallCheckbox", false));
         treasureMapsCheckbox.setChecked(prefs.getBoolean("treasureMapsCheckbox", false));
+
+        raidStandardBearersCheckbox.setChecked(prefs.getBoolean("raidStandardBearersCheckbox", false));
+        raidRoyalPoolsCheckbox.setChecked(prefs.getBoolean("raidRoyalPoolsCheckbox", false));
+        raidPleasureGardensCheckbox.setChecked(prefs.getBoolean("raidPleasureGardensCheckbox", false));
+        raidGauntletCheckbox.setChecked(prefs.getBoolean("raidGauntletCheckbox", false));
+        raidEmperorCalusCheckbox.setChecked(prefs.getBoolean("raidEmperorCalusCheckbox", false));
     }
 
     @Override
@@ -74,6 +101,13 @@ public class MainActivity extends AppCompatActivity
         editor.putBoolean("flashpointCheckbox", flashpointCheckbox.isChecked());
         editor.putBoolean("nightfallCheckbox", nightfallCheckbox.isChecked());
         editor.putBoolean("treasureMapsCheckbox", treasureMapsCheckbox.isChecked());
+
+        editor.putBoolean("raidStandardBearersCheckbox", raidStandardBearersCheckbox.isChecked());
+        editor.putBoolean("raidRoyalPoolsCheckbox", raidRoyalPoolsCheckbox.isChecked());
+        editor.putBoolean("raidPleasureGardensCheckbox", raidPleasureGardensCheckbox.isChecked());
+        editor.putBoolean("raidGauntletCheckbox", raidGauntletCheckbox.isChecked());
+        editor.putBoolean("raidEmperorCalusCheckbox", raidEmperorCalusCheckbox.isChecked());
+
         editor.apply();
     }
 }
